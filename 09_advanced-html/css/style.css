@@ -50,7 +50,7 @@ img {
 body {
   min-width: 1200px;
   font-family: "Muller", sans-serif;
-  background: #E5E5E5;
+  background: #F1F1F1;
 }
 
 /* global */
@@ -514,7 +514,7 @@ body {
 /* tour */
 .tour-container {
   padding: 38px 45px 71px 45px;
-  background: #E9E9E9;
+  background: #E1E1E1;
   border-radius: 15px;
 }
 
@@ -580,4 +580,105 @@ body {
   padding: 13px 30px;
   border: 1px solid #CC9933;
   border-radius: 10px;
+}
+
+/* contacts */
+.footer,
+.contacts {
+  padding-bottom: 20px;
+}
+
+.contacts-title {
+  margin-bottom: 26px;
+  color: #333333;
+}
+
+.container-contacts {
+  padding: 44px 44px 46px 46px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.contacts-left {
+  flex-direction: column;
+  width: 375px;
+  margin-right: 50px
+}
+
+.list-contacts {
+  flex-direction: column;
+}
+
+.item-contacts {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.item-contacts:not(:nth-child(4n)) {
+  margin-bottom: 25px;
+}
+
+.container-contacts-title {
+  width: 98px;
+  margin: 0;
+  margin-right: 47px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.container-item-contacts {
+  flex-direction: column;
+}
+
+.container-contacts-descr {
+  margin: 0;
+  max-width: 214px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.container-contacts-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.container-contacts-mail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.container-contacts-mail-ask {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #999999;
+}
+
+.container-contacts-btn {
+  padding-top: 45px;
+}
+
+.contacts-btn {
+  padding: 27px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
+.contacts-right {
+  width: 653px;
+  height: 528px;
+  background-image: url("../img/contacts.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
