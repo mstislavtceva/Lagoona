@@ -533,7 +533,7 @@ body {
 }
 
 .list-form {
-  /* align-content: stretch; */
+  margin-right: 20px;
 }
 
 .form-item {
@@ -572,10 +572,6 @@ body {
   border-bottom: 1px solid #CCCCCC;
 }
 
-.container-btn-form {
-  padding-left: 20px;
-}
-
 .form-btn {
   padding: 13px 30px;
   border: 1px solid #CC9933;
@@ -607,6 +603,7 @@ body {
 
 .list-contacts {
   flex-direction: column;
+  margin-bottom: 45px;
 }
 
 .item-contacts {
@@ -662,10 +659,6 @@ body {
   color: #999999;
 }
 
-.container-contacts-btn {
-  padding-top: 45px;
-}
-
 .contacts-btn {
   padding: 27px 29px;
   font-weight: 700;
@@ -676,7 +669,7 @@ body {
 
 .contacts-right {
   width: 653px;
-  height: 528px;
+  min-height: 528px;
   background-image: url("../img/contacts.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -752,38 +745,9 @@ body {
 
 .footer-right-list {
   flex-direction: column;
-
 }
 
 .footer-right-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.footer-right-social {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.social-sova {
-  background-image: url("../img/sova.svg");
-}
-
-.social-tw {
-  background-image: url("../img/twitter.svg");
-}
-
-.social-fb {
-  background-image: url("../img/facebook.svg");
-}
-
-.social-vk {
-  background-image: url("../img/vkontakte.svg");
-}
-
-.social-inst {
-  background-image: url("../img/instagram.svg");
-}
