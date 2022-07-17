@@ -272,6 +272,8 @@ body {
 }
 
 .card {
+  /* position: relative;*/
+  /* МНЕ ВОТ ТУТ RELATIVE ЗАДАВАТЬ?? */
   padding: 40px 234px 40px 40px;
   width: 573px;
   border-radius: 15px;
@@ -340,6 +342,8 @@ body {
   width: 100%;
   height: 100%;
 } */
+
+/* ТАК Я ВООБЩЕ ЗАДАЮ?? ПОЧЕМУ ПОЛЕ КЛИКАБЕЛЬНОСТИ НА ПОЛЭКРАНА У МЕНЯ? */
 
 .link-icon-feature-offer {
   position: relative;
@@ -897,7 +901,6 @@ body {
 
 .footer-right-social:hover svg path {
   fill: var(--yellow-color);
-  stroke: var(--white-color);
 }
 
 .footer-right-social:active svg path {
