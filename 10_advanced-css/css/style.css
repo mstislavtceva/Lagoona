@@ -272,8 +272,7 @@ body {
 }
 
 .card {
-  /* position: relative;*/
-  /* МНЕ ВОТ ТУТ RELATIVE ЗАДАВАТЬ?? */
+  position: relative;
   padding: 40px 234px 40px 40px;
   width: 573px;
   border-radius: 15px;
@@ -286,6 +285,7 @@ body {
 .card-spec {
   padding: 211px 234px 41px 40px;
   width: 573px;
+  height: 100%;
   border-radius: 15px;
 }
 
@@ -334,16 +334,20 @@ body {
   color: #FFCC66;
 }
 
-/* .cards-preview-link::before {
+.cards-preview-link::after {
   content: "";
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-} */
+}
 
-/* ТАК Я ВООБЩЕ ЗАДАЮ?? ПОЧЕМУ ПОЛЕ КЛИКАБЕЛЬНОСТИ НА ПОЛЭКРАНА У МЕНЯ? */
+.cards-preview-link:focus::after {
+  outline-offset: 5px;
+  outline: 1px solid #CC9933;
+}
 
 .link-icon-feature-offer {
   position: relative;
@@ -365,6 +369,7 @@ body {
 }
 
 .card-img-3 {
+  position: relative;
   background: linear-gradient(360deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/preview-3.jpg');
   background-position: center;
   background-size: cover;
@@ -626,6 +631,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.last-placement-item-link:focus::after {
+  outline-offset: 5px;
+  outline: 1px solid #CC9933;
 }
 
 .last-place-icon {
