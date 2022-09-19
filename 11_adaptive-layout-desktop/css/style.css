@@ -82,6 +82,7 @@ body {
 
 .container {
   max-width: 1920px;
+  margin: 0 auto;
   padding: 0 75px;
 }
 
@@ -117,7 +118,7 @@ body {
 
 /* header */
 .header {
-  margin-right: 0;
+  padding: 0;
   padding-bottom: 50px;
 }
 
@@ -172,19 +173,19 @@ body {
 .nav__link:hover::after {
   opacity: 1;
   background-color: var(--orange-color);
-  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .nav__link:active {
   outline: none;
   opacity: 1;
   color: var(--strong-orange-color);
-  transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .nav__link:active::after {
   background-color: var(--strong-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .header__search {
@@ -195,6 +196,7 @@ body {
 /* hero */
 
 .hero {
+  padding: 0;
   padding-bottom: 50px;
 }
 
@@ -238,17 +240,17 @@ body {
 
 .hero__btn:focus {
   background-color: var(--light-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .hero__btn:hover {
   background-color: var(--light-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .hero__btn:active {
   background-color: var(--strong-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* about-us */
@@ -318,18 +320,18 @@ body {
 .container-inner__btn:focus {
   background-color: var(--orange-color);
   border-color: var(--orange-color);
-  transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .container-inner__btn:hover {
   background-color: var(--orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .container-inner__btn:active {
   background-color: var(--strong-orange-color);
   border-color: var(--strong-orange-color);
-  transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .about-content__card {
@@ -386,7 +388,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: var(--black-color);
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .stages-start__link:focus {
@@ -446,17 +448,17 @@ body {
 
 .stages-text__btn-orange:focus {
   background-color: var(--light-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .stages-text__btn-orange:hover {
   background-color: var(--light-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .stages-text__btn-orange:active {
   background-color: var(--strong-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .stages-text__btn-black {
@@ -467,7 +469,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: var(--black-color);
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .stages-text__btn-black:focus,
@@ -509,7 +511,7 @@ body {
   padding-right: 75px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--grey-color);
-  transition: border-color 0.5s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .faq__item:first-child {
@@ -541,7 +543,7 @@ body {
 }
 
 .item-question__title {
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -557,7 +559,7 @@ body {
 
 .faq__item svg ellipse,
 .faq__item svg path {
-  transition: fill 0.5s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 
 .faq__item:focus svg ellipse {
@@ -606,7 +608,7 @@ body {
   font-size: 18px;
   line-height: 36px;
   color: var(--grey-color);
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer-left__link:focus {
@@ -635,7 +637,7 @@ body {
 
 .social-link svg path {
   fill: #666666;
-  transition: fill 0.5s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 
 .social-link:focus svg path {
@@ -684,9 +686,10 @@ body {
   padding: 14px;
   padding-left: 24px;
   margin-bottom: 22px;
+  color: var(--white-color);
   background-color: #414141;
   border-radius: 16px;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .form__input:focus {
@@ -707,6 +710,7 @@ body {
   padding-top: 14px;
   padding-left: 24px;
   margin-bottom: 27px;
+  color: var(--white-color);
   background-color: #414141;
   border-radius: 16px;
 }
@@ -724,17 +728,17 @@ body {
 
 .form__btn:focus {
   background-color: var(--light-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .form__btn:hover {
   background-color: var(--light-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .form__btn:active {
   background-color: var(--strong-orange-color);
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .check {
