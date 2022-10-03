@@ -212,7 +212,8 @@ body {
 
 .hero__container {
   border-radius: 32px;
-  padding: 100px 853px 100px 80px;
+  padding: 100px 92px 100px 80px;
+  object-fit: cover;
   background-image: url('../img/hero-1.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -221,6 +222,7 @@ body {
 .hero__title {
   margin: 0;
   margin-bottom: 24px;
+  max-width: 837px;
   font-weight: 800;
   font-size: 70px;
   line-height: 85px;
@@ -229,6 +231,7 @@ body {
 
 .hero__descr {
   margin: 0;
+  max-width: 790px;
   margin-bottom: 84px;
   font-weight: 700;
   font-size: 24px;
@@ -283,17 +286,27 @@ body {
   color: var(--black-color);
 }
 
+.about-container {
+  display: flex;
+}
+
 .about-container__left {
   position: relative;
+  display: inline-block;
   border-radius: 32px;
-  width: calc((100% - 30px) / 2);
-  height: 617px;
+  width: 860px;
+  height: 100%;
   margin: 0;
   margin-right: 30px;
 }
 
+.about-container__left img {
+  width: 860px;
+}
+
 .about-container__inner {
   flex-direction: row;
+  border-radius: 32px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -302,14 +315,14 @@ body {
   align-items: center;
   padding: 50px;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 32px;
+  transform: translateY(-3px);
 }
 
 .container-inner__text {
   max-width: 433px;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: 155px;
+  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
@@ -349,6 +362,7 @@ body {
 }
 
 .about-content__card {
+  display: flex;
   flex-direction: row;
   margin-right: 0px;
   padding: 62px 100px 65px 35px;
@@ -428,7 +442,6 @@ body {
 }
 
 .stages-end__left {
-  width: calc((100% - 132px) / 2);
   margin-right: 132px;
 }
 
@@ -498,7 +511,7 @@ body {
 
 .stages-end__right {
   border-radius: 32px;
-  width: 918px;
+  width: 870px;
   background-image: url('../img/stages.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -506,7 +519,7 @@ body {
 
 /* faq */
 .faq {
-  padding-bottom: 97px;
+  padding-bottom: 78px;
 }
 
 .faq__title {
@@ -703,6 +716,12 @@ body {
   font-size: 48px;
   line-height: 59px;
   color: var(--grey-color);
+}
+
+.footer-middle__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .form__input {
