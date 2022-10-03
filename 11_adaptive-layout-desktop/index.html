@@ -7,13 +7,13 @@
   <title>Евклид</title>
   <link rel="icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-new.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
-  <header class="header container">
-    <div class="header__container flex">
+  <header class="header">
+    <div class="container header__container flex">
       <a href="#" class="header__logo">
         <img src="img/logo.svg" alt="Логотип компании">
       </a>
@@ -49,7 +49,7 @@
       </div>
     </section>
     <section id="about-us" class="about-us section-offset">
-      <div class="about-us__container container">
+      <div class="container about-us__container">
         <h2 class="about-us__title section-title">О нас</h2>
         <div class="about-us__text about-text">
           <p class="about-text__descr">
@@ -63,17 +63,29 @@
             высококачественный прототип будущего проекта способствует повышению качества экспериментов.
           </p>
         </div>
-        <div class="about-us__block-left about-container flex">
-          <div class="about-container__left flex">
-            <div class="about-container__inner container-inner flex">
-              <p class="container-inner__descr">
+        <div class="about-content about-container flex">
+          <figure class="about-container__left">
+            <img src="../11_adaptive-layout-desktop/img/about-us.jpg" alt="Изображение сайта Евклид">
+            <figcaption class="about-container__inner container-inner flex">
+              <p class="container-inner__text">
                 Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке
                 и&nbsp;реализации новых принципов
               </p>
               <button class="container-inner__btn btn btn-reset">Подробнее</button>
+            </figcaption>
+          </figure>
+          <!-- <div class="about-container__left flex">
+            <div class="about-container__inner container-inner flex">
+              <div class="container-inner__descr">
+                <p class="container-inner__text">
+                  Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке
+                  и&nbsp;реализации новых принципов
+                </p>
+              </div>
+              <button class="container-inner__btn btn btn-reset">Подробнее</button>
             </div>
-          </div>
-          <div class="about-us__block-right about-content">
+          </div> -->
+          <div class="about-container__right about-content">
             <div class="about-content__card flex">
               <svg class="about-content__icon" width="190" height="165" viewBox="0 0 190 165" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +135,7 @@
       </div>
     </section>
     <section id="stages" class="stages section-offset">
-      <div class="stages__top stages-start container">
+      <div class="container stages__top stages-start">
         <h2 class="stages-start__title section-title">Как мы&nbsp;работаем</h2>
         <ul class="stages-start__list list-reset flex">
           <li class="stages-start__item"><a href="#" class="stages-start__link">1 шаг</a></li>
@@ -152,7 +164,7 @@
       </div>
     </section>
     <section class="faq section-offset">
-      <div class="faq__container container">
+      <div class="container faq__container">
         <h2 class="faq__title section-title">Часто задаваемые вопросы</h2>
         <ul class="faq__list list-reset">
           <li class="faq__item item-question">
@@ -209,10 +221,9 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container footer-content container flex">
+    <div class="container footer__container footer-content flex">
       <div class="footer-content__left footer-left">
-        <a href="#" class="footer-left__logo"><img src="img/footer-logo.svg"
-            alt="Логотип"></a>
+        <a href="#" class="footer__logo"><img src="img/footer-logo.svg" alt="Логотип"></a>
         <ul class="footer-left__list list-reset">
           <li class="footer-left__item"><a href="#about-us" class="footer-left__link">О нас</a></li>
           <li class="footer-left__item"><a href="#projects" class="footer-left__link">Проекты</a></li>
