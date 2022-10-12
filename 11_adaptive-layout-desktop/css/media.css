@@ -375,6 +375,10 @@
     padding-bottom: 47px;
   }
 
+  .stages-start__title {
+    margin-bottom: 46px;
+  }
+
   .stages-start__list {
     justify-content: space-between;
   }
@@ -385,6 +389,7 @@
 
   .stages-end__right {
     height: 286px;
+    margin-bottom: 40px;
   }
 
   .faq {
@@ -392,7 +397,7 @@
   }
 
   .faq__title {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .faq__item {
@@ -668,7 +673,7 @@
   }
 
   .container-title {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
   }
@@ -693,12 +698,14 @@
   .stages-text__btn-orange {
     padding: 12px 44px;
     margin-right: 4px;
+    border-radius: 8px;
     font-size: 12px;
     line-height: 15px;
   }
 
   .stages-text__btn-black {
     padding: 12px 32px;
+    border-radius: 8px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -706,9 +713,177 @@
 }
 
 @media (max-width: 320px) {
-  .hero__title {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
+  .header {
+    padding: 17px 0px;
+    border-radius: 0px 0px 16px 16px;
   }
+
+  .hero__container {
+    border-radius: 16px;
+    padding: 59px 21px 29px 21px;
+    height: 308px;
+  }
+
+  .hero__title {
+    margin-bottom: 9px;
+  }
+
+  .hero__descr {
+    margin-bottom: 32px;
+  }
+
+  .hero__btn {
+    border-radius: 8px
+  }
+
+  .about-us {
+    padding-top: 61px;
+  }
+
+  .about-content__card {
+    margin: 0;
+  }
+
+  .about-us__text {
+    margin-bottom: 15px;
+  }
+
+  .about-container__left {
+    margin-bottom: 231px;
+    height: 200px;
+  }
+
+  .about-container__inner {
+    padding-top: 7px;
+  }
+
+  .container-inner__text {
+    margin-bottom: 12px;
+  }
+
+  .container-inner__btn {
+    padding: 9px 41px;
+    border-radius: 8px;
+  }
+
+  .container-title-spec {
+    margin-bottom: 4px;
+  }
+
+  .stages {
+    padding-top: 16px;
+    padding-bottom: 60px;
+  }
+
+  .stages-start__title {
+    margin-bottom: 20px;
+  }
+
+  .stages-start__list {
+    margin-bottom: 15px;
+  }
+
+  .stages-end__right {
+    margin-bottom: 21px;
+    border-radius: 16px;
+    height: 160px;
+  }
+
+  .stages-text__title {
+    margin-bottom: 12px;
+  }
+
+  .stages-text__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .faq {
+    padding-bottom: 59px;
+  }
+
+  .faq__title {
+    margin-bottom: 16px;
+  }
+
+  .faq__item svg {
+    width: 30px;
+    height: 30px;
+    transform: translateY(10px);
+  }
+
+  .faq__item:nth-child(3) svg {
+    transform: translateY(10px);
+  }
+
+  .faq__item:nth-child(5) svg {
+    transform: translateY(10px);
+  }
+
+  .faq__item:not(:nth-child(1)) {
+    padding: 16px 0 16px;
+  }
+
+  .footer {
+    padding-top: 35px;
+    padding-bottom: 26px;
+  }
+
+  .footer-middle__title {
+    margin-bottom: 19px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .footer-middle__form {
+    margin-bottom: 33px;
+  }
+
+  .form__input {
+    padding-left: 17px;
+  }
+
+  .form__textarea {
+    padding-top: 22px;
+    padding-left: 18px;
+    margin-bottom: 27px;
+  }
+
+  .form__btn {
+    padding: 12px 28px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer__logo {
+    height: 42px;
+    width: 131px;
+  }
+
+  .footer-left__social-item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .social-link svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-content__left {
+    position: relative;
+  }
+
+  .footer-content__left::before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #414141;
+  }
+
 }
