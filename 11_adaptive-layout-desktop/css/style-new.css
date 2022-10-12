@@ -294,7 +294,7 @@ body {
   position: relative;
   display: inline-block;
   border-radius: 32px;
-  width: 860px;
+  width: calc((100% - 30px) / 2);
   margin: 0;
   margin-right: 30px;
 }
@@ -405,7 +405,7 @@ body {
   margin-bottom: 47px;
 }
 
-.stages-start__items {
+.stages-start__item {
   margin-bottom: 45px;
 }
 
@@ -568,18 +568,19 @@ body {
 }
 
 .item-question__title {
-  transition: color 0.3s ease-in-out;
+  max-width: calc(100% - 50px);
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: var(--black-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .faq__item svg {
   position: absolute;
+  margin-top: -25px;
   right: 0;
   top: 50%;
-  margin-top: -25px;
 }
 
 .faq__item svg ellipse,
