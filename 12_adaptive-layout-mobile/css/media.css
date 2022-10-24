@@ -1,6 +1,14 @@
 @media (max-width: 1610px) {
+  .header__container {
+    justify-content: space-between;
+  }
+
   .header__logo {
-    margin-right: 100px;
+    margin-right: auto;
+  }
+
+  .about-us__text {
+    max-width: 100%;
   }
 
   .about-container {
@@ -8,32 +16,31 @@
     align-items: center;
   }
 
-  .about-us__text {
-    max-width: 100%;
-  }
-
   .about-container__left {
-    display: inline-block;
-    width: 970px;
     margin: 0;
     margin-bottom: 30px;
-    height: 100%;
-  }
-
-  .about-container__left img {
-    width: 970px;
+    width: calc(100% - 100px);
+    height: 624px;
+    background-image: url("../img/about-us.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .about-container__right {
-    width: 970px;
+    width: calc(100% - 100px);
   }
 
   .stages-end__left {
     margin-right: 12px;
   }
 
+  .stages-end__right {
+    background-size: cover;
+  }
+
   .footer-left {
-    margin-right: 240px;
+    margin-right: 60px;
   }
 
   .footer-right {
@@ -41,18 +48,23 @@
   }
 }
 
-@media (max-width: 1201px) {
-  .header__nav {
-    display: none;
+@media (max-width: 1024px) {
+  .header {
+    padding: 26px 0;
   }
 
   .header__container {
     justify-content: space-between;
   }
 
+  .header__nav {
+    display: none;
+  }
+
   .burger {
     position: relative;
     display: block;
+    margin-right: auto;
     width: 30px;
     height: 23px;
   }
@@ -85,30 +97,8 @@
     transition: outline 0.3s ease-in-out;
   }
 
-  .stages-end__right {
-    border-radius: 32px;
-    width: 437px;
-    background-image: url("../img/stages-1024.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .footer-left {
-    margin-right: 110px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .header {
-    padding: 26px 0;
-  }
-
   .container {
     padding: 0 50px;
-  }
-
-  .burger {
-    margin-right: 100px;
   }
 
   .header__logo {
@@ -118,9 +108,10 @@
 
   .hero {
     padding-top: 40px;
+    padding-bottom: 0px;
   }
 
-  .hero__container {
+  .hero__container-picture {
     padding: 160px 10px 159px 77px;
   }
 
@@ -148,13 +139,8 @@
   }
 
   .about-container__left {
-    width: 925px;
-    height: 642px;
-  }
-
-  .about-container__left img {
     width: 100%;
-    height: 100%;
+    height: 642px;
   }
 
   .about-container__right {
@@ -187,7 +173,7 @@
     margin-bottom: 51px;
   }
 
-  .stages-start__item {
+  .stages-start__list {
     margin-bottom: 55px;
   }
 
@@ -202,7 +188,11 @@
   }
 
   .stages-end__right {
+    width: calc(100% - 180px);
+    height: 689px;
+    background-image: url("../img/stages-1024.png");
     background-position: right;
+    background-size: auto;
   }
 
   .item-question__title {
@@ -286,12 +276,9 @@
     align-items: center;
   }
 
-  .stages-start__item {
-    margin-bottom: 20px;
-  }
-
   .stages-start__list {
     justify-content: space-evenly;
+    margin-bottom: 20px;
   }
 
   .stages-end__left {
@@ -326,7 +313,7 @@
     padding: 11px 0;
   }
 
-  .hero__container {
+  .hero__container-picture {
     padding: 152px 10px 159px 40px;
   }
 
@@ -381,9 +368,6 @@
 
   .stages-start__list {
     justify-content: space-between;
-  }
-
-  .stages-start__item {
     margin-bottom: 50px;
   }
 
@@ -454,7 +438,7 @@
 }
 
 @media (max-width: 690px) {
-  .hero__container {
+  .hero__container-picture {
     padding: 52px 10px 29px 40px;
   }
 
@@ -472,7 +456,8 @@
   }
 
   .about-container__left {
-    margin-bottom: 250px;
+    position: initial;
+    margin-bottom: 225px;
     min-height: auto;
     height: 400px;
   }
@@ -483,6 +468,7 @@
     padding: 0;
     padding-top: 11px;
     background: none;
+    transform: translateY(404px);
   }
 
   .container-inner__text {
@@ -587,14 +573,6 @@
     margin: 0;
     width: 100%;
   }
-
-  /* .footer-content__left::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-top: 1px solid var(--grey-color);
-  } */
-
 }
 
 @media (max-width: 470px) {
@@ -621,7 +599,7 @@
     width: 110px;
   }
 
-  .hero__container {
+  .hero__container-picture {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -652,9 +630,13 @@
   }
 
   .about-container__left {
-    margin-bottom: 31px;
+    margin-bottom: 195px;
     min-height: 200px;
     height: 100%;
+  }
+
+  .about-container__inner {
+    transform: translateY(194px);
   }
 
   .about-us__text {
@@ -718,7 +700,7 @@
     border-radius: 0px 0px 16px 16px;
   }
 
-  .hero__container {
+  .hero__container-picture {
     border-radius: 16px;
     padding: 59px 21px 29px 21px;
     height: 308px;
@@ -754,7 +736,7 @@
   }
 
   .about-container__inner {
-    padding-top: 7px;
+    padding-top: 13px;
   }
 
   .container-inner__text {
